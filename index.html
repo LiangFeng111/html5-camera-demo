@@ -124,11 +124,24 @@
 				
 				
 				}
-				setTimeout(() => console.log("我在两秒后被输出！"), 2*1000); // 1000 = 1s
-				// 执行上述代码，两秒后会在控制台输出：我在两秒后被输出！
+				
+				document.getElementById("snap").onclick(pai());
 
 				//这个是拍照按钮的事件，  
-				document.getElementById("snap").onclick =pai();
+				// document.getElementById("snap").onclick = function pai() {
+				// 	context.drawImage(video, 0, 0, 320, 320);
+				// 	//获取浏览器页面的画布对象
+				// 	var canvans = document.getElementById("canvas");
+				// 	//以下开始编 数据   
+				// 	var imgData = canvans.toDataURL();
+				// 	//将图像转换为base64数据
+				// 	var base64Data = imgData.substr(22);
+				// 	//将获得的base64数据设置为photo的背景图
+				// 	document.getElementById("photo").style.backgroundImage = "url(data:image/png;base64," + base64Data + ")";
+				// 	document.getElementById("text").innerHTML = base64Data;
+
+
+				// }
 			}
 		</script>
 
